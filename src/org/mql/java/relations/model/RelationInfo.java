@@ -1,4 +1,4 @@
-package org.mql.java.relations;
+package org.mql.java.relations.model;
 
 import org.mql.java.relations.ennumerations.RelationType;
 
@@ -9,10 +9,16 @@ public class RelationInfo {
 	private String name;
 	private boolean isCollection;
 	
+	
+	
+	public RelationInfo() {
+		
+	}
+
 	public RelationInfo(String sourceClss, String targetClss, RelationType type) {
 		super();
 		this.sourceClss = sourceClss;
-		targetClss = targetClss;
+		this.targetClss = targetClss;
 		this.type = type;
 	}
 
@@ -29,7 +35,7 @@ public class RelationInfo {
 	}
 
 	public void setTargetClss(String targetClss) {
-		targetClss = targetClss;
+		this.targetClss = targetClss;
 	}
 
 	public RelationType getType() {

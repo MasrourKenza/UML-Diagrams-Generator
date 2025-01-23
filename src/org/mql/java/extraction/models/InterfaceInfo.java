@@ -1,7 +1,7 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class InterfaceInfo extends JavaElement {
     private List<MethodInfo> methods;
@@ -9,8 +9,8 @@ public class InterfaceInfo extends JavaElement {
     
     public InterfaceInfo(String name) {
         super(name);
-        this.methods = new ArrayList<>();
-        this.extendedInterfaces = new ArrayList<>();
+        this.methods = new Vector<>();
+        this.extendedInterfaces = new Vector<>();
     }
     
     public void addMethod(MethodInfo method) {

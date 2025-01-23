@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:uml="http://www.omg.org/spec/UML/20110701">
+  <uml:Model name="Masrour Kenza - UML Diagrams Generator">
+    <packagedElement name="" xmi:type="uml:Package"/>
+    <packagedElement name="org" xmi:type="uml:Package"/>
+    <packagedElement name="org.mql" xmi:type="uml:Package"/>
+    <packagedElement name="org.mql.java" xmi:type="uml:Package"/>
+    <packagedElement name="org.mql.java.exemples" xmi:type="uml:Package">
+      <Classes isFinal="false" isStatic="false" name="Exemples" xmi:type="uml:Class">
+        <Attributs/>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="exp01_1"/>
+          <Méthodes isFinal="false" isStatic="false" name="exp01_2"/>
+          <Méthodes isFinal="false" isStatic="true" name="main"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="XMLExemples" xmi:type="uml:Class">
+        <Attributs/>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="exp01_4"/>
+          <Méthodes isFinal="false" isStatic="false" name="exp01_3"/>
+          <Méthodes isFinal="false" isStatic="false" name="exp01_6"/>
+          <Méthodes isFinal="false" isStatic="true" name="createTestProject"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayAttributes"/>
+          <Méthodes isFinal="false" isStatic="true" name="main"/>
+        </Méthodes>
+      </Classes>
+    </packagedElement>
+    <packagedElement name="org.mql.java.extraction" xmi:type="uml:Package">
+      <Classes isFinal="false" isStatic="false" name="Display" xmi:type="uml:Class">
+        <Attributs/>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="true" name="displayPackageInfo"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayMethodInfo"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayEnumInfo"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayFieldInfo"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayClassInfo"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayInterfaceInfo"/>
+          <Méthodes isFinal="false" isStatic="true" name="displayAnnotationInfo"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="ProjectScanner" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="project" type="Project"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="scanClass"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanClss"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanEnum"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanProject"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanInterface"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanAnnotation"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanDirectory"/>
+        </Méthodes>
+      </Classes>
+    </packagedElement>
+    <packagedElement name="org.mql.java.extraction.models" xmi:type="uml:Package">
+      <Classes isFinal="false" isStatic="false" name="AnnotationInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="elements" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="addElement"/>
+          <Méthodes isFinal="false" isStatic="false" name="getElements"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="ClassInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="fields" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="methods" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="superclass" type="Class"/>
+          <Attributs isFinal="false" isStatic="false" name="interfaces" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="addField"/>
+          <Méthodes isFinal="false" isStatic="false" name="addInterface"/>
+          <Méthodes isFinal="false" isStatic="false" name="getSuperclass"/>
+          <Méthodes isFinal="false" isStatic="false" name="getInterfaces"/>
+          <Méthodes isFinal="false" isStatic="false" name="getFields"/>
+          <Méthodes isFinal="false" isStatic="false" name="getMethods"/>
+          <Méthodes isFinal="false" isStatic="false" name="addMethod"/>
+          <Méthodes isFinal="false" isStatic="false" name="setSuperclass"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="EnumInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="constants" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="methods" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="getConstants"/>
+          <Méthodes isFinal="false" isStatic="false" name="getMethods"/>
+          <Méthodes isFinal="false" isStatic="false" name="addMethod"/>
+          <Méthodes isFinal="false" isStatic="false" name="addConstant"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="FieldInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="type" type="Class"/>
+          <Attributs isFinal="false" isStatic="false" name="value" type="Object"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="getValue"/>
+          <Méthodes isFinal="false" isStatic="false" name="setValue"/>
+          <Méthodes isFinal="false" isStatic="false" name="getType"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="InterfaceInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="methods" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="extendedInterfaces" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="addExtendedInterface"/>
+          <Méthodes isFinal="false" isStatic="false" name="getExtendedInterfaces"/>
+          <Méthodes isFinal="false" isStatic="false" name="getMethods"/>
+          <Méthodes isFinal="false" isStatic="false" name="addMethod"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="JavaElement" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="name" type="String"/>
+          <Attributs isFinal="false" isStatic="false" name="visibility" type="String"/>
+          <Attributs isFinal="false" isStatic="false" name="isStatic" type="Object"/>
+          <Attributs isFinal="false" isStatic="false" name="isFinal" type="Object"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="setStatic"/>
+          <Méthodes isFinal="false" isStatic="false" name="setFinal"/>
+          <Méthodes isFinal="false" isStatic="false" name="setVisibility"/>
+          <Méthodes isFinal="false" isStatic="false" name="getName"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="MethodInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="returnType" type="Class"/>
+          <Attributs isFinal="false" isStatic="false" name="parameterTypes" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="setReturnType"/>
+          <Méthodes isFinal="false" isStatic="false" name="addParameterType"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="PackageModel" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="classes" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="interfaces" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="enums" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="annotations" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="getEnums"/>
+          <Méthodes isFinal="false" isStatic="false" name="addEnum"/>
+          <Méthodes isFinal="false" isStatic="false" name="addInterface"/>
+          <Méthodes isFinal="false" isStatic="false" name="addAnnotation"/>
+          <Méthodes isFinal="false" isStatic="false" name="getInterfaces"/>
+          <Méthodes isFinal="false" isStatic="false" name="getClasses"/>
+          <Méthodes isFinal="false" isStatic="false" name="getAnnotations"/>
+          <Méthodes isFinal="false" isStatic="false" name="addClass"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="Project" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="packages" type="List"/>
+          <Attributs isFinal="false" isStatic="false" name="rootPath" type="String"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="addPackage"/>
+          <Méthodes isFinal="false" isStatic="false" name="getRootPath"/>
+          <Méthodes isFinal="false" isStatic="false" name="getPackages"/>
+        </Méthodes>
+      </Classes>
+    </packagedElement>
+    <packagedElement name="org.mql.java.relations" xmi:type="uml:Package">
+      <Classes isFinal="false" isStatic="false" name="ClassScanner" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="projectPath" type="String"/>
+          <Attributs isFinal="false" isStatic="false" name="classLoader" type="URLClassLoader"/>
+          <Attributs isFinal="false" isStatic="false" name="discoveredClasses" type="List"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="getProjectPath"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanClasses"/>
+          <Méthodes isFinal="false" isStatic="false" name="getDiscoveredClasses"/>
+          <Méthodes isFinal="false" isStatic="false" name="initializeClassLoader"/>
+          <Méthodes isFinal="false" isStatic="false" name="loadClass"/>
+          <Méthodes isFinal="false" isStatic="false" name="close"/>
+          <Méthodes isFinal="false" isStatic="false" name="scanDirectory"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="RelationAnalyzer" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="relationships" type="Set"/>
+          <Attributs isFinal="false" isStatic="false" name="analyzClasses" type="Set"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="analyzClass"/>
+          <Méthodes isFinal="false" isStatic="false" name="analyzFields"/>
+          <Méthodes isFinal="false" isStatic="false" name="getRelationships"/>
+          <Méthodes isFinal="false" isStatic="false" name="getCollectionType"/>
+          <Méthodes isFinal="false" isStatic="false" name="analyzSuperclass"/>
+          <Méthodes isFinal="false" isStatic="false" name="analyzInterfaces"/>
+          <Méthodes isFinal="false" isStatic="false" name="analyzMethods"/>
+          <Méthodes isFinal="false" isStatic="false" name="hasCompositionAnnotation"/>
+          <Méthodes isFinal="false" isStatic="false" name="hasAggregationAnnotation"/>
+          <Méthodes isFinal="false" isStatic="false" name="analyzType"/>
+        </Méthodes>
+      </Classes>
+    </packagedElement>
+    <packagedElement name="org.mql.java.relations.annotations" xmi:type="uml:Package"/>
+    <packagedElement name="org.mql.java.relations.ennumerations" xmi:type="uml:Package">
+      <Enums name="RelationType" xmi:type="uml:Enumeration"/>
+    </packagedElement>
+    <packagedElement name="org.mql.java.relations.model" xmi:type="uml:Package">
+      <Classes isFinal="false" isStatic="false" name="RelationInfo" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="sourceClss" type="String"/>
+          <Attributs isFinal="false" isStatic="false" name="targetClss" type="String"/>
+          <Attributs isFinal="false" isStatic="false" name="type" type="RelationType"/>
+          <Attributs isFinal="false" isStatic="false" name="name" type="String"/>
+          <Attributs isFinal="false" isStatic="false" name="isCollection" type="Object"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="isCollection"/>
+          <Méthodes isFinal="false" isStatic="false" name="getSourceClss"/>
+          <Méthodes isFinal="false" isStatic="false" name="setSourceClss"/>
+          <Méthodes isFinal="false" isStatic="false" name="getTargetClss"/>
+          <Méthodes isFinal="false" isStatic="false" name="setTargetClss"/>
+          <Méthodes isFinal="false" isStatic="false" name="setCollection"/>
+          <Méthodes isFinal="false" isStatic="false" name="setType"/>
+          <Méthodes isFinal="false" isStatic="false" name="getName"/>
+          <Méthodes isFinal="false" isStatic="false" name="toString"/>
+          <Méthodes isFinal="false" isStatic="false" name="setName"/>
+          <Méthodes isFinal="false" isStatic="false" name="getType"/>
+        </Méthodes>
+      </Classes>
+    </packagedElement>
+    <packagedElement name="org.mql.java.xml" xmi:type="uml:Package">
+      <Classes isFinal="false" isStatic="false" name="XMIGenerator" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="project" type="Project"/>
+          <Attributs isFinal="false" isStatic="false" name="document" type="Document"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="generateXMI"/>
+          <Méthodes isFinal="false" isStatic="false" name="transformXMI"/>
+          <Méthodes isFinal="false" isStatic="false" name="processPackageElements"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="XMLParser" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="false" isStatic="false" name="document" type="Document"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="parseProject"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseJavaElement"/>
+          <Méthodes isFinal="false" isStatic="false" name="parsePackage"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseInterface"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseClass"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseEnum"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseMethod"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseField"/>
+          <Méthodes isFinal="false" isStatic="false" name="parseAnnotation"/>
+        </Méthodes>
+      </Classes>
+      <Classes isFinal="false" isStatic="false" name="XMLPersistence" xmi:type="uml:Class">
+        <Attributs>
+          <Attributs isFinal="true" isStatic="false" name="document" type="Document"/>
+        </Attributs>
+        <Méthodes>
+          <Méthodes isFinal="false" isStatic="false" name="persistProject"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistJavaElement"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistField"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistClass"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistMethod"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistPackage"/>
+          <Méthodes isFinal="false" isStatic="false" name="saveDocument"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistAnnotation"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistInterface"/>
+          <Méthodes isFinal="false" isStatic="false" name="persistEnum"/>
+        </Méthodes>
+      </Classes>
+    </packagedElement>
+  </uml:Model>
+</xmi:XMI>

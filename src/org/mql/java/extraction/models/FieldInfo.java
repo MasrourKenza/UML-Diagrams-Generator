@@ -1,9 +1,11 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
+
 
 public class FieldInfo extends JavaElement {
     private Class<?> type;
     private Object value;
     
+   
     public FieldInfo(String name, Class<?> type) {
         super(name);
         this.type = type;

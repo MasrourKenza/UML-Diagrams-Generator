@@ -1,7 +1,9 @@
 package org.mql.java.extraction;
 
+import org.mql.java.extraction.models.*;
+
 public class Display {
-    public static void displayPackageInfo(Package pkg) {
+    public static void displayPackageInfo(PackageModel pkg) {
         System.out.println("\n📦 Package: " + pkg.getName());
         System.out.println("├── Classes: " + pkg.getClasses().size());
         System.out.println("├── Interfaces: " + pkg.getInterfaces().size());
@@ -83,6 +85,17 @@ public class Display {
           System.out.println(mtd);
       }
 
+    
+    public static void displayAnnotationInfo(AnnotationInfo annot) {
+        System.out.println("\n  🔹 Annotation: " + annot.getName());
+        if (!annot.getElements().isEmpty()) {
+            System.out.println("  └── Éléments:");
+            for (MethodInfo element : annot.getElements()) {
+                displayMethodInfo(element);
+            }
+        }
+    }
+    
     public static void displayInterfaceInfo(InterfaceInfo intf) {
         System.out.println("\n  🔶 Interface: " + intf.getName());
         if (!intf.getExtendedInterfaces().isEmpty()) {
@@ -113,13 +126,5 @@ public class Display {
         }
     }
 
-    public static void displayAnnotationInfo(AnnotationInfo annot) {
-        System.out.println("\n  🔹 Annotation: " + annot.getName());
-        if (!annot.getElements().isEmpty()) {
-            System.out.println("  └── Éléments:");
-            for (MethodInfo element : annot.getElements()) {
-                displayMethodInfo(element);
-            }
-        }
-    }
+    
 }

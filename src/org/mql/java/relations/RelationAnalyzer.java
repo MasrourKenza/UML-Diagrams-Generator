@@ -3,36 +3,37 @@ package org.mql.java.relations;
 import java.lang.reflect.*;
 import java.util.*;
 
-import org.mql.java.relations.annotaions.Aggregation;
-import org.mql.java.relations.annotaions.Composition;
+import org.mql.java.relations.annotations.Aggregation;
+import org.mql.java.relations.annotations.Composition;
 import org.mql.java.relations.ennumerations.RelationType;
+import org.mql.java.relations.model.RelationInfo;
 
 public class RelationAnalyzer {
     private Set<RelationInfo> relationships;
-    private Set<String> analyzedClasses;
+    private Set<String> analyzClasses;
     
     public RelationAnalyzer() {
         this.relationships = new HashSet<>();
-        this.analyzedClasses = new HashSet<>();
+        this.analyzClasses = new HashSet<>();
     }
     
-    public Set<RelationInfo> analyzeClass(Class<?> cls) {
-        if (!analyzedClasses.add(cls.getName())) {
+    public Set<RelationInfo> analyzClass(Class<?> cls) {
+        if (!analyzClasses.add(cls.getName())) {
             return relationships;
         }
         
-        analyzeSuperclass(cls);
+        analyzSuperclass(cls);
         
-        analyzeInterfaces(cls);
+        analyzInterfaces(cls);
         
-        analyzeFields(cls);
+        analyzFields(cls);
         
-        analyzeMethods(cls);
+        analyzMethods(cls);
         
         return relationships;
     }
     
-    private void analyzeSuperclass(Class<?> cls) {
+    private void analyzSuperclass(Class<?> cls) {
         Class<?> superclass = cls.getSuperclass();
         if (superclass != null && !superclass.equals(Object.class)) {
             relationships.add(new RelationInfo(
@@ -43,7 +44,7 @@ public class RelationAnalyzer {
         }
     }
     
-    private void analyzeInterfaces(Class<?> cls) {
+    private void analyzInterfaces(Class<?> cls) {
         for (Class<?> iface : cls.getInterfaces()) {
             relationships.add(new RelationInfo(
                 cls.getName(),
@@ -53,7 +54,7 @@ public class RelationAnalyzer {
         }
     }
     
-    private void analyzeFields(Class<?> cls) {
+    private void analyzFields(Class<?> cls) {
         for (Field field : cls.getDeclaredFields()) {
             if (field.isSynthetic()) continue;
             
@@ -79,23 +80,23 @@ public class RelationAnalyzer {
         }
     }
     
-    private void analyzeMethods(Class<?> cls) {
+    private void analyzMethods(Class<?> cls) {
         for (Method method : cls.getDeclaredMethods()) {
             if (method.isSynthetic()) continue;
             
-            analyzeType(cls, method.getReturnType());
+            analyzType(cls, method.getReturnType());
             
             for (Class<?> paramType : method.getParameterTypes()) {
-                analyzeType(cls, paramType);
+                analyzType(cls, paramType);
             }
             
             for (Class<?> exceptionType : method.getExceptionTypes()) {
-                analyzeType(cls, exceptionType);
+                analyzType(cls, exceptionType);
             }
         }
     }
     
-    private void analyzeType(Class<?> cls, Class<?> type) {
+    private void analyzType(Class<?> cls, Class<?> type) {
         if (!type.isPrimitive() && !type.equals(String.class) && !type.equals(Object.class)) {
             relationships.add(new RelationInfo(
                 cls.getName(),

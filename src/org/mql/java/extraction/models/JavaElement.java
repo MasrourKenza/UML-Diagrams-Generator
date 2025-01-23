@@ -1,12 +1,16 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
 
 public abstract class JavaElement {
     protected String name;
-    protected String visibility;
-    protected boolean isStatic;
-    protected boolean isFinal;
+    public String visibility;
+    public boolean isStatic;
+    public boolean isFinal;
+    
+    public JavaElement() {
+	}
     
     public JavaElement(String name) {
+    	super();
         this.name = name;
     }
     

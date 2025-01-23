@@ -1,15 +1,18 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class MethodInfo extends JavaElement {
-    Class<?> returnType;
-    List<Class<?>> parameterTypes;
+    public Class<?> returnType;
+    public List<Class<?>> parameterTypes;
+    
+    public MethodInfo() {
+	}
     
     public MethodInfo(String name) {
         super(name);
-        this.parameterTypes = new ArrayList<>();
+        this.parameterTypes = new Vector<>();
     }
     
     public void setReturnType(Class<?> returnType) {

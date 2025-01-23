@@ -1,15 +1,15 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Package extends JavaElement {
+public class PackageModel extends JavaElement {
     private List<ClassInfo> classes;
     private List<InterfaceInfo> interfaces;
     private List<EnumInfo> enums;
     private List<AnnotationInfo> annotations;
     
-    public Package(String name) {
+    public PackageModel(String name) {
         super(name);
         this.classes = new ArrayList<>();
         this.interfaces = new ArrayList<>();

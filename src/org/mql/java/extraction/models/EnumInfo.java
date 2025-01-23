@@ -1,16 +1,19 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class EnumInfo extends JavaElement {
     List<String> constants;
     private List<MethodInfo> methods;
     
+    public EnumInfo() {
+	}
+    
     public EnumInfo(String name) {
         super(name);
-        this.constants = new ArrayList<>();
-        this.methods = new ArrayList<>();
+        this.constants = new Vector<>();
+        this.methods = new Vector<>();
     }
     
     public void addConstant(String constant) {

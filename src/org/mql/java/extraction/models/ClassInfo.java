@@ -1,7 +1,7 @@
-package org.mql.java.extraction;
+package org.mql.java.extraction.models;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class ClassInfo extends JavaElement {
     private List<FieldInfo> fields;
@@ -9,11 +9,14 @@ public class ClassInfo extends JavaElement {
     private Class<?> superclass;
     private List<Class<?>> interfaces;
     
+    public ClassInfo() {
+	}
+    
     public ClassInfo(String name) {
-        super(name);
-        this.fields = new ArrayList<>();
-        this.methods = new ArrayList<>();
-        this.interfaces = new ArrayList<>();
+    	super(name);
+        this.fields = new Vector<>();
+        this.methods = new Vector<>();
+        this.interfaces = new Vector<>();
     }
     
     public void addField(FieldInfo field) {

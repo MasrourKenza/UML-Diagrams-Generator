@@ -5,6 +5,7 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class ClassScanner {
     private String projectPath;
@@ -13,7 +14,7 @@ public class ClassScanner {
 
     public ClassScanner(String projectPath) {
         this.projectPath = projectPath;
-        this.discoveredClasses = new ArrayList<>();
+        this.discoveredClasses = new Vector<>();
         initializeClassLoader();
     }
 
@@ -22,7 +23,7 @@ public class ClassScanner {
             URL url = new File(projectPath).toURI().toURL();
             this.classLoader = new URLClassLoader(new URL[]{url});
         } catch (Exception e) {
-            throw new RuntimeException("Erreur lors de l'initialisation du ClassLoader: " + e.getMessage());
+            throw new RuntimeException(e.getMessage());
         }
     }
 
@@ -60,8 +61,7 @@ public class ClassScanner {
             discoveredClasses.add(cls);
             
         } catch (Exception e) {
-            System.err.println("Erreur lors du chargement de la classe " + 
-                             file.getName() + ": " + e.getMessage());
+            System.err.println( e.getMessage());
         }
     }
 
@@ -71,7 +71,7 @@ public class ClassScanner {
                 classLoader.close();
             }
         } catch (Exception e) {
-            System.err.println("Erreur lors de la fermeture du ClassLoader: " + e.getMessage());
+            System.err.println(e.getMessage());
         }
     }
 
