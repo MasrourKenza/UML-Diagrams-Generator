@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="Masrour Kenza - UML Diagrams Generator" rootPath="C:\Users\hp\git\repository2\Masrour Kenza - UML Diagrams Generator/bin">
+  <packages>
+    <package name="">
+      <classes/>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org">
+      <classes/>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql">
+      <classes/>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql.java">
+      <classes/>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql.java.extraction">
+      <classes>
+        <class isFinal="false" isStatic="false" name="AnnotationInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="elements" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="getElements">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addElement">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="ClassInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="fields" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="methods" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="superclass" type="java.lang.Class"/>
+            <field isFinal="false" isStatic="false" name="interfaces" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="addField">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addInterface">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getSuperclass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getInterfaces">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getFields">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getMethods">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addMethod">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setSuperclass">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="Display">
+          <implements/>
+          <fields/>
+          <methods>
+            <method isFinal="false" isStatic="true" name="displayClassInfo">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="displayPackageInfo">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="displayMethodInfo">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="displayEnumInfo">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="displayFieldInfo">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="displayInterfaceInfo">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="displayAnnotationInfo">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="EnumInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="constants" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="methods" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="getConstants">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getMethods">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addMethod">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addConstant">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="FieldInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="type" type="java.lang.Class"/>
+            <field isFinal="false" isStatic="false" name="value" type="java.lang.Object"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="getValue">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setValue">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getType">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="InterfaceInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="methods" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="extendedInterfaces" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="addExtendedInterface">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getExtendedInterfaces">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getMethods">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addMethod">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="JavaElement">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="name" type="java.lang.String"/>
+            <field isFinal="false" isStatic="false" name="visibility" type="java.lang.String"/>
+            <field isFinal="false" isStatic="false" name="isStatic" type="boolean"/>
+            <field isFinal="false" isStatic="false" name="isFinal" type="boolean"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="setFinal">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setStatic">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setVisibility">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getName">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="MethodInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="returnType" type="java.lang.Class"/>
+            <field isFinal="false" isStatic="false" name="parameterTypes" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="addParameterType">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setReturnType">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="Package">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="classes" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="interfaces" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="enums" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="annotations" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="addEnum">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getEnums">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addAnnotation">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addInterface">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getInterfaces">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getClasses">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getAnnotations">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="addClass">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="Project">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="packages" type="java.util.List"/>
+            <field isFinal="false" isStatic="false" name="rootPath" type="java.lang.String"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="addPackage">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getRootPath">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getPackages">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="ProjectScanner">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="project" type="org.mql.java.extraction.Project"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="scanEnum">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanClass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanProject">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanAnnotation">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanInterface">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanRegularClass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanDirectory">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+      </classes>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql.java.main">
+      <classes>
+        <class isFinal="false" isStatic="false" name="Main">
+          <implements/>
+          <fields/>
+          <methods>
+            <method isFinal="false" isStatic="true" name="main">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="XMLMain">
+          <implements/>
+          <fields/>
+          <methods>
+            <method isFinal="false" isStatic="true" name="createTestProject">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="true" name="main">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+      </classes>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql.java.relations">
+      <classes>
+        <class isFinal="false" isStatic="false" name="ClassScanner">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="projectPath" type="java.lang.String"/>
+            <field isFinal="false" isStatic="false" name="classLoader" type="java.net.URLClassLoader"/>
+            <field isFinal="false" isStatic="false" name="discoveredClasses" type="java.util.List"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="getProjectPath">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanClasses">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getDiscoveredClasses">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="initializeClassLoader">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="loadClass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="close">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="scanDirectory">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="RelationAnalyzer">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="relationships" type="java.util.Set"/>
+            <field isFinal="false" isStatic="false" name="analyzedClasses" type="java.util.Set"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="getCollectionType">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="analyzeMethods">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="analyzeType">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getRelationships">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="analyzeSuperclass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="analyzeFields">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="analyzeClass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="analyzeInterfaces">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="hasAggregationAnnotation">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="hasCompositionAnnotation">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+        <class isFinal="false" isStatic="false" name="RelationInfo">
+          <implements/>
+          <fields>
+            <field isFinal="false" isStatic="false" name="sourceClss" type="java.lang.String"/>
+            <field isFinal="false" isStatic="false" name="targetClss" type="java.lang.String"/>
+            <field isFinal="false" isStatic="false" name="type" type="org.mql.java.relations.ennumerations.RelationType"/>
+            <field isFinal="false" isStatic="false" name="name" type="java.lang.String"/>
+            <field isFinal="false" isStatic="false" name="isCollection" type="boolean"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="setCollection">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getSourceClss">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setSourceClss">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setTargetClss">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="isCollection">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getTargetClss">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setType">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getName">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="toString">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="setName">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="getType">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+      </classes>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql.java.relations.annotations">
+      <classes/>
+      <interfaces>
+        <interface isFinal="false" isStatic="false" name="Aggregation">
+          <extends/>
+          <methods/>
+        </interface>
+        <interface isFinal="false" isStatic="false" name="Composition">
+          <extends/>
+          <methods/>
+        </interface>
+      </interfaces>
+      <enums/>
+      <annotations/>
+    </package>
+    <package name="org.mql.java.relations.ennumerations">
+      <classes/>
+      <interfaces/>
+      <enums>
+        <enum isFinal="false" isStatic="false" name="RelationType">
+          <constants>
+            <constant>AGGREGATION</constant>
+            <constant>COMPOSITION</constant>
+            <constant>EXTENSTION</constant>
+            <constant>IMPLEMENTATION</constant>
+            <constant>UTILISATION</constant>
+            <constant>ASSOCIATION</constant>
+          </constants>
+          <methods/>
+        </enum>
+      </enums>
+      <annotations/>
+    </package>
+    <package name="org.mql.java.xml">
+      <classes>
+        <class isFinal="false" isStatic="false" name="XMLPersistence">
+          <implements/>
+          <fields>
+            <field isFinal="true" isStatic="false" name="document" type="org.w3c.dom.Document"/>
+          </fields>
+          <methods>
+            <method isFinal="false" isStatic="false" name="persistPackage">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistAnnotation">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistEnum">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistJavaElement">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistClass">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistInterface">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistMethod">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="saveDocument">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistField">
+              <parameters/>
+            </method>
+            <method isFinal="false" isStatic="false" name="persistProject">
+              <parameters/>
+            </method>
+          </methods>
+        </class>
+      </classes>
+      <interfaces/>
+      <enums/>
+      <annotations/>
+    </package>
+  </packages>
+</project>
